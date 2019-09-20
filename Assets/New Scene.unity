@@ -2445,7 +2445,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286301606}
+        m_MethodName: ChangedSliders
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &592619449
@@ -2715,7 +2726,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286301606}
+        m_MethodName: ChangedSliders
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &700465091
@@ -4384,7 +4406,7 @@ GameObject:
   - component: {fileID: 1286301604}
   - component: {fileID: 1286301606}
   m_Layer: 5
-  m_Name: Image
+  m_Name: ColorPickerElement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4453,6 +4475,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6d2cb909db4d1c409b51b6c82c50ceb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Hue: {fileID: 590099537}
+  Saturation: {fileID: 1631335408}
+  Value: {fileID: 700063437}
+  colorPickerMat: {fileID: 2100000, guid: 23fcd46ff3182604981d236e754292b4, type: 2}
+  birdMat: {fileID: 2100000, guid: e1837c907bb38544a85948a04e0b2284, type: 2}
+  color: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1289081077
 GameObject:
   m_ObjectHideFlags: 0
@@ -5798,7 +5826,18 @@ MonoBehaviour:
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1286301606}
+        m_MethodName: ChangedSliders
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &1669982470
