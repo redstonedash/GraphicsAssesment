@@ -67,7 +67,13 @@
 				// sample the texture
 				fixed4 col = float4(HSVtoRGB(float3(_Hue,i.uv)),1);// tex2D(_MainTex, i.uv);
 				float cursorDist = distance(float2(_Saturation, _Value), i.uv);
-				col *= cursorDist<0.03f || cursorDist > 0.06f;
+				if (_Value < 0.33f)
+				{
+					col /= cursorDist<0.03f || cursorDist > 0.06f;
+				}
+				else {
+					col *= cursorDist<0.03f || cursorDist > 0.06f;
+				}
 				// apply fog
 				UNITY_APPLY_FOG(i.fogCoord, col);
 				return col;
