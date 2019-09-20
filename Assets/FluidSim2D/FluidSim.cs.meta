@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c92750c9d16225047ba06824c8c4f2e5
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_guiMat: {instanceID: 0}
+  - m_advectMat: {instanceID: 0}
+  - m_buoyancyMat: {instanceID: 0}
+  - m_divergenceMat: {instanceID: 0}
+  - m_jacobiMat: {instanceID: 0}
+  - m_impluseMat: {instanceID: 0}
+  - m_gradientMat: {instanceID: 0}
+  - m_obstaclesMat: {fileID: 10301, guid: 0000000000000000f000000000000000, type: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
