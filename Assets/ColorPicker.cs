@@ -10,7 +10,7 @@ public class ColorPicker : MonoBehaviour {
     [SerializeField] Material colorPickerMat;
     [SerializeField] Material birdMat; //i really should compartmentalize this but it's 12:34
 
-    public Color color;
+    public Color color; //bird should set his own color but not enough time for good code deisgn //TODO FIX THIS IF I NEED EXTRA TIME
     public void Start()
     {
         ChangedSliders(); //just to initilize the values
@@ -20,7 +20,8 @@ public class ColorPicker : MonoBehaviour {
        colorPickerMat.SetFloat("_Hue", Hue.value);
        colorPickerMat.SetFloat("_Saturation", Saturation.value);
        colorPickerMat.SetFloat("_Value", Value.value);
-        print("iwork");
+       Vector3 RGB = HSVtoRGB(new Vector3(Hue.value, Saturation.value, Value.value));
+       birdMat.SetColor("_Color",new Color(RGB.x,RGB.y,RGB.z));
     }
     //these functions are from http://www.chilliant.com/rgb2hsv.html still don't know the math for this lmao, addapted to C#
     Vector3 HUEtoRGB(float H)
@@ -34,6 +35,6 @@ public class ColorPicker : MonoBehaviour {
     Vector3 HSVtoRGB(Vector3 HSV)
     {
         Vector3 RGB = HUEtoRGB(HSV.x);
-        return ((RGB - new Vector3(1,1,1)) * (HSV.y + 1.0f)) * HSV.z;
+        return (((RGB - new Vector3(1, 1, 1)) * HSV.y) + new Vector3(1,1,1)) * HSV.z;
     }
 }
